@@ -7,7 +7,6 @@ import {
   firestore,
   convertCollectionSnapshotToMaps,
 } from "../../firebase/firebase-utils";
-// import CollectionPage from '../collection/collection';
 
 import { updateCollections } from "../../redux/shop/shop-action";
 
@@ -29,9 +28,6 @@ class ShopPage extends React.Component {
     return (
       <div className="shop-page">
         <Route exact path={`${match.path}`} component={CollectionOverview} />
-        {/* <Route path='/shop/:catogryId' component={CollectionPage} /> */}
-
-        {/* <Route path={`${match.path}/:categoryId`} component={CollectionPage} /> */}
       </div>
     );
   }

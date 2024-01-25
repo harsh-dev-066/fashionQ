@@ -61,11 +61,11 @@ class App extends React.Component {
             <Suspense fallback={<WithSpinner />}>
               <Route exact path="/" component={HomePage} />
               <Route exact path="/shop" component={ShopPage} />
-              {/* <Route
+              <Route
                 exact
                 path="/shop/:collectionId"
                 component={CollectionPage}
-              /> */}
+              />
               <Route
                 exact
                 path="/signin"
